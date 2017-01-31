@@ -9,19 +9,19 @@ function CardsController() {
   dataStore.getCharacters(ready)
   console.log(dataStore)
 
-  
+
 
 
   this.onAdd = function (charId) {
     //this function will take the player that was clicked and add them to your team through the dataStore.
     dataStore.addToMyCharacters(charId)
-    draw(dataStore.getMarvelCharacters(),dataStore.getMyCharacters())
+    draw(dataStore.getMarvelCharacters(), dataStore.getMyCharacters())
   }
 
   this.onRemove = function (charId) {
     //this will remove the character from your team
     dataStore.removeMyCharacter(charId)
-    draw(dataStore.getMarvelCharacters(),dataStore.getMyCharacters())
+    draw(dataStore.getMarvelCharacters(), dataStore.getMyCharacters())
   }
 
 
